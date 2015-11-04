@@ -26,3 +26,12 @@ class MakoRenderer:
         tmpl = self._render(filename=filename)
         html = tmpl.render()
         return html
+
+    @staticmethod
+    def register_engine():
+        """
+        Add this rendering engine to the standard growler renderer
+        """
+
+        import growler.middleware.renderer
+        growler.middleware.renderer.render_engine_map['mako'] = MakoRenderer
