@@ -5,7 +5,7 @@
 Metadata file.
 """
 
-version = '0.0.0'
+version = '0.0.1'
 date = 'Nov 03, 2015'
 author = 'Andrew Kubera'
 author_email = 'andrewkubera@gmail.com'
