@@ -24,9 +24,11 @@ TESTS_REQUIRE = [
     'pytest-asyncio',
 ]
 
-PACKAGES = find_packages(
-    exclude=["*.tests", "*.tests.*", "tests.*", "tests"]
-)
+PACKAGES = [
+    'growler_mako',
+    'growler_ext.mako_renderer',
+    'growler_ext.MakoRenderer',
+]
 
 NAMESPACES = [
     'growler_ext',
