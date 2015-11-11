@@ -13,7 +13,7 @@ from imp import load_source
 NAME = 'growler-mako'
 
 REQUIRES = [
-    'mako'
+    'mako',
 ]
 
 OPTIONAL_REQUIRES = {
@@ -50,7 +50,7 @@ CLASSIFIERS = [
 metafile = path.join(".", "growler_mako", "__meta__.py")
 metadata = load_source("metadata", metafile)
 
-tar_url = 'https://github.com/pygrowler/growler-websocket/archive/v%s.tar.gz' % (metadata.version)  # noqa
+tar_url = 'https://github.com/pygrowler/growler-mako/archive/v%s.tar.gz' % (metadata.version)  # noqa
 
 setup(
     name=NAME,
